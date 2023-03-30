@@ -1,0 +1,15 @@
+C:\Users\izalu\OneDrive - Southern Alberta Institute of Technology\Winter2023\CPRG211-OOP2\Labs\SinglyLinkedList\bin\Debug\net6.0\SinglyLinkedList.exe
+C:\Users\izalu\OneDrive - Southern Alberta Institute of Technology\Winter2023\CPRG211-OOP2\Labs\SinglyLinkedList\bin\Debug\net6.0\SinglyLinkedList.deps.json
+C:\Users\izalu\OneDrive - Southern Alberta Institute of Technology\Winter2023\CPRG211-OOP2\Labs\SinglyLinkedList\bin\Debug\net6.0\SinglyLinkedList.runtimeconfig.json
+C:\Users\izalu\OneDrive - Southern Alberta Institute of Technology\Winter2023\CPRG211-OOP2\Labs\SinglyLinkedList\bin\Debug\net6.0\SinglyLinkedList.dll
+C:\Users\izalu\OneDrive - Southern Alberta Institute of Technology\Winter2023\CPRG211-OOP2\Labs\SinglyLinkedList\bin\Debug\net6.0\SinglyLinkedList.pdb
+C:\Users\izalu\OneDrive - Southern Alberta Institute of Technology\Winter2023\CPRG211-OOP2\Labs\SinglyLinkedList\obj\Debug\net6.0\SinglyLinkedList.csproj.AssemblyReference.cache
+C:\Users\izalu\OneDrive - Southern Alberta Institute of Technology\Winter2023\CPRG211-OOP2\Labs\SinglyLinkedList\obj\Debug\net6.0\SinglyLinkedList.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\izalu\OneDrive - Southern Alberta Institute of Technology\Winter2023\CPRG211-OOP2\Labs\SinglyLinkedList\obj\Debug\net6.0\SinglyLinkedList.AssemblyInfoInputs.cache
+C:\Users\izalu\OneDrive - Southern Alberta Institute of Technology\Winter2023\CPRG211-OOP2\Labs\SinglyLinkedList\obj\Debug\net6.0\SinglyLinkedList.AssemblyInfo.cs
+C:\Users\izalu\OneDrive - Southern Alberta Institute of Technology\Winter2023\CPRG211-OOP2\Labs\SinglyLinkedList\obj\Debug\net6.0\SinglyLinkedList.csproj.CoreCompileInputs.cache
+C:\Users\izalu\OneDrive - Southern Alberta Institute of Technology\Winter2023\CPRG211-OOP2\Labs\SinglyLinkedList\obj\Debug\net6.0\SinglyLinkedList.dll
+C:\Users\izalu\OneDrive - Southern Alberta Institute of Technology\Winter2023\CPRG211-OOP2\Labs\SinglyLinkedList\obj\Debug\net6.0\refint\SinglyLinkedList.dll
+C:\Users\izalu\OneDrive - Southern Alberta Institute of Technology\Winter2023\CPRG211-OOP2\Labs\SinglyLinkedList\obj\Debug\net6.0\SinglyLinkedList.pdb
+C:\Users\izalu\OneDrive - Southern Alberta Institute of Technology\Winter2023\CPRG211-OOP2\Labs\SinglyLinkedList\obj\Debug\net6.0\SinglyLinkedList.genruntimeconfig.cache
+C:\Users\izalu\OneDrive - Southern Alberta Institute of Technology\Winter2023\CPRG211-OOP2\Labs\SinglyLinkedList\obj\Debug\net6.0\ref\SinglyLinkedList.dll

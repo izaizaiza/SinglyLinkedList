@@ -1,0 +1,5 @@
+C:\Users\izalu\OneDrive - Southern Alberta Institute of Technology\Winter2023\CPRG211-OOP2\Labs\SinglyLinkedListTest\obj\Debug\net6.0\SinglyLinkedListTest.csproj.AssemblyReference.cache
+C:\Users\izalu\OneDrive - Southern Alberta Institute of Technology\Winter2023\CPRG211-OOP2\Labs\SinglyLinkedListTest\obj\Debug\net6.0\SinglyLinkedListTest.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\izalu\OneDrive - Southern Alberta Institute of Technology\Winter2023\CPRG211-OOP2\Labs\SinglyLinkedListTest\obj\Debug\net6.0\SinglyLinkedListTest.AssemblyInfoInputs.cache
+C:\Users\izalu\OneDrive - Southern Alberta Institute of Technology\Winter2023\CPRG211-OOP2\Labs\SinglyLinkedListTest\obj\Debug\net6.0\SinglyLinkedListTest.AssemblyInfo.cs
+C:\Users\izalu\OneDrive - Southern Alberta Institute of Technology\Winter2023\CPRG211-OOP2\Labs\SinglyLinkedListTest\obj\Debug\net6.0\SinglyLinkedListTest.csproj.CoreCompileInputs.cache
