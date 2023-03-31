@@ -56,7 +56,7 @@ namespace SinglyLinkedListTest
             {
                 link.AddLast(name);
             }
-
+            // recall, that our 'index' for the linked list technically doesnt start at 0, rather at 1.
             string expValue = "Joe Blow";
             string actValue = link.GetValue(7);
 
@@ -80,7 +80,7 @@ namespace SinglyLinkedListTest
 
             // now remove the first
             link.RemoveFirst();
-
+            // recall, that our 'index' for the linked list technically doesnt start at 0, rather at 1.
             string expValue = "Joe Schmoe";
             string actValue = link.GetValue(1);
             Assert.That(actValue, Is.EqualTo(expValue));
@@ -98,6 +98,7 @@ namespace SinglyLinkedListTest
                 link.AddLast(name);
             }
             link.RemoveLast();
+            // recall, that our 'index' for the linked list technically doesnt start at 0, rather at 1.
             string expValue = "Joe Schmoe";
             string actValue = link.GetValue(6);
 
