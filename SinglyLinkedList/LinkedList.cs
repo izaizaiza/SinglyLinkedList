@@ -54,8 +54,7 @@ namespace SinglyLinkedList
         public void AddLast(string inputVal)
         {
             //make a new node with the inputvalue
-            Node newNode= new Node(inputVal);
-
+            Node newNode = new Node(inputVal);
             //if linked list is empty, just add the new node
             if(Head==null)
             {
@@ -67,13 +66,13 @@ namespace SinglyLinkedList
                 // go through all the nodes until there is no next node or if it is null
              
                 // make the next node the head so we can get the nextnode and check that too
-                Node newNewNode = new Node();
-                newNewNode = Head;
-                while (newNewNode.NextNode != null)
+                Node currentNode = new Node();
+                currentNode = Head;
+                while (currentNode.NextNode != null)
                 {
-                    newNewNode = newNewNode.NextNode;
+                    currentNode = currentNode.NextNode;
                 }
-                newNewNode.NextNode = newNode;
+                currentNode.NextNode = newNode;
                 count++;
             }
            
@@ -112,7 +111,7 @@ namespace SinglyLinkedList
             if (Head != null)
             {
                 // if node next to head is null then just empty the list
-                if(Head.NextNode!= null)
+                if(Head.NextNode == null)
                 {
                     Head = null;
                 }
@@ -120,19 +119,15 @@ namespace SinglyLinkedList
                 else
                 {
                     Node? currentNode = Head; //start at the head
-                    Node currentNode2 = Head; // need another to track the next node rightbehind current node
-                    while(currentNode.NextNode != null)
+                    //go through the list, next node becomes the current... till the node before the last node
+                    while(currentNode.NextNode.NextNode != null)
                     {
-                        // next node becomes the current node, going through the list
-                        currentNode2 = currentNode;
                         currentNode = currentNode.NextNode;
                     }
-                    // at this point, currentnode2 is the second last node
-                    // assign currentnode2 to null, so we can git rid of currentnode which is the last node
-                    currentNode2.NextNode = null;
-                    currentNode = null;
+                    // at this point, currentNode is the second last node
+                    // assign it's nextnode to null, so we can git rid of it b/c it is the last node
+                    currentNode.NextNode = null;
                     count--;
-
                 }             
             }
             else

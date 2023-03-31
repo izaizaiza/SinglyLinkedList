@@ -4,6 +4,9 @@ internal class Program
 {
     private static void Main(string[] args)
     {
+        ///<summary>
+        /// to quickly check if logic works
+        /// </summary>
         Console.WriteLine("Hello, World!");
 
         SinglyLinkedList.LinkedList linked = new SinglyLinkedList.LinkedList();
@@ -27,21 +30,35 @@ internal class Program
 
         //check if AddFirst works
         linked.DisplayValues();
-
+        //Console.WriteLine(linked.GetValue(3));
         Console.WriteLine("\n");
+
         //check if AddLast works
         linked2.DisplayValues();
+        //Console.WriteLine(linked2.GetValue(4));
 
         //check if remove first works
         Console.WriteLine("\n");
         linked.RemoveFirst();
         linked.DisplayValues();
 
+        int[] indexes = { 0, 1, 2, 3, 4, 5, 6 };
+        foreach(int i in indexes)
+        {
+            Console.WriteLine(linked.GetValue(i));
+        }
+        //Console.WriteLine(linked.GetValue(1));
+        //Console.WriteLine(linked.GetValue(2));
+
         //check if remove last works
         Console.WriteLine("\n");
         linked.RemoveLast();
-
         linked.DisplayValues();
+        //Console.WriteLine(linked.GetValue(1));
+        //Console.WriteLine(linked.GetValue(2));
+        //Console.WriteLine(linked.GetValue(3));
+        //Console.WriteLine(linked.GetValue(4));
+        //Console.WriteLine(linked.GetValue(5));
 
 
         //Console.WriteLine(linked.GetValue(6));

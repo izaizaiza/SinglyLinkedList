@@ -24,15 +24,15 @@ namespace SinglyLinkedList
             Value = null;
         }
 
-        /// <summary>
-        /// takes in a string value and assigns it as the node's value
-        /// </summary>
-        /// <param name="value"></param>
+        ///// <summary>
+        ///// takes in a string value and assigns it as the node's value
+        ///// </summary>
+        ///// <param name="value"></param>
         public Node(string value)
         {
             Value = value;
         }
 
-        
+
     }
 }
