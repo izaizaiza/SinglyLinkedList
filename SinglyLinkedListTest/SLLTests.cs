@@ -1,4 +1,8 @@
+using NUnit.Framework.Constraints;
 using SinglyLinkedList;
+using System;
+using System.Globalization;
+using System.Reflection;
 
 namespace SinglyLinkedListTest
 {
@@ -15,7 +19,6 @@ namespace SinglyLinkedListTest
 
 
         [Test]
-
         public void Test_AddFirst_ReturnsVoid()
         {
             LinkedList link = new LinkedList();
@@ -32,16 +35,16 @@ namespace SinglyLinkedListTest
             string[] expNodeValues = {"Joe Blow","Joe Schmoe","John Smith",
                 "Jane Doe","Bob Bobberson","Sam Sammerson","Dave Daverson"};
 
+ 
             int[] indexes = { 1, 2, 3, 4, 5, 6, 7 };
             foreach(int index in indexes)
             {
-                Assert.That(expNodeValues[index - 1], Is.EqualTo(link.GetValue(index)));
+                Assert.That(link.GetValue(index), Is.EqualTo(expNodeValues[index - 1]));
             }
             
         }
 
-        //[Test]
-
+        [Test]
         public void Test_AddLast_ReturnsVoid()
         {
             LinkedList link = new LinkedList();
@@ -54,13 +57,10 @@ namespace SinglyLinkedListTest
                 link.AddLast(name);
             }
 
-            // since were adding last, the order it was added should be the same order as when its added to the linked list
-            int[] indexes = {0, 1, 2, 3, 4, 5, 6};
-            foreach (int index in indexes)
-            {
-                Assert.That(names[index - 1], Is.EqualTo(link.GetValue(index)));
-            }
+            string expValue = "Joe Blow";
+            string actValue = link.GetValue(7);
 
+            Assert.That(actValue, Is.EqualTo(expValue));
         }
 
 
@@ -81,31 +81,49 @@ namespace SinglyLinkedListTest
             // now remove the first
             link.RemoveFirst();
 
-            string[] expNodeValues = {"Joe Schmoe","John Smith",
-                "Jane Doe","Bob Bobberson","Sam Sammerson","Dave Daverson"};
+            string expValue = "Joe Schmoe";
+            string actValue = link.GetValue(1);
+            Assert.That(actValue, Is.EqualTo(expValue));
+        }
 
-            int[] indexes = {0, 1, 2, 3, 4, 5, 6};
-            foreach (int index in indexes)
+        [Test]
+        public void Test_RemoveLast_ReturnsVoid()
+        {
+            LinkedList link = new LinkedList();
+            string[] names = {"Dave Daverson" , "Sam Sammerson", "Bob Bobberson",
+            "Jane Doe","John Smith","Joe Schmoe","Joe Blow"};
+
+            foreach (string name in names)
             {
-                Assert.That(expNodeValues[index], Is.EqualTo(link.GetValue(index)));
+                link.AddLast(name);
             }
+            link.RemoveLast();
+            string expValue = "Joe Schmoe";
+            string actValue = link.GetValue(6);
+
+            Assert.That(actValue, Is.EqualTo(expValue));
 
         }
 
-        //[Test]
-        ////[TestCase("")]
-        //public void Test_RemoveLast_ReturnsVoid()
-        //{
-        //    Assert.Pass();
-        //}
+        [Test]
+        public void Test_GetValue_ReturnsString()
+        {
+            LinkedList link = new LinkedList();
 
-        //[Test]
-        ////[TestCase("")]
-        //public void Test_GetValue_ReturnsString()
-        //{
-        //    Assert.Pass();
-        //}
+            string[] names = {"Dave Daverson" , "Sam Sammerson", "Bob Bobberson",
+            "Jane Doe","John Smith","Joe Schmoe","Joe Blow"};
+            foreach (string name in names)
+            {
+                link.AddLast(name);
+            }
+            string expValue = "Sam Sammerson";
+            string actValue = link.GetValue(2);
 
+            Assert.That(actValue, Is.EqualTo(expValue));
+        }
+
+        //[TearDown]
+        
 
     }
 }
