@@ -33,15 +33,6 @@ namespace SinglyLinkedList
             Value = value;
         }
 
-        //print node's value and its next node's value
-        public void PrintNode()
-        {
-            //Console.WriteLine($"node's value:{Value}\n" +
-            //    $"next node's value:{NextNode.Value}");
-
-            Console.WriteLine($"node's value:{Value}");
-        }
-
         
     }
 }

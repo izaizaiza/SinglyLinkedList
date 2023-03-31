@@ -24,28 +24,33 @@ internal class Program
         linked2.AddLast("Joe Schmoe");
         linked2.AddLast("Joe Blow");
 
-        int[] indexes = { 0, 1, 2, 3, 4, 5, 6};
-        foreach(int i in indexes)
-        {
-            Console.WriteLine(linked.GetValue(i));
-        }
 
-        foreach (int i in indexes)
-        {
-            Console.WriteLine(linked2.GetValue(i));
-        }
+        //check if AddFirst works
+        linked.DisplayValues();
 
+        Console.WriteLine("\n");
+        //check if AddLast works
+        linked2.DisplayValues();
+
+        //check if remove first works
+        Console.WriteLine("\n");
+        linked.RemoveFirst();
+        linked.DisplayValues();
+
+        //check if remove last works
+        Console.WriteLine("\n");
         linked.RemoveLast();
-        foreach (int i in indexes)
-        {
-            Console.WriteLine(linked.GetValue(i));
-        }
 
-        linked2.RemoveFirst();
-        foreach (int i in indexes)
-        {
-            Console.WriteLine(linked2.GetValue(i));
-        }
+        linked.DisplayValues();
+
+
+        //Console.WriteLine(linked.GetValue(6));
+        //int[] indexes = { 0, 1, 2, 3, 4, 5 };
+        ////print to check
+        //foreach (int i in indexes)
+        //{
+        //    Console.WriteLine(linked.GetValue(i));
+        //}
 
     }
 }
