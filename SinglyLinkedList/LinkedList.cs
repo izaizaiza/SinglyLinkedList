@@ -166,7 +166,7 @@ namespace SinglyLinkedList
         /// gets the size of the list
         /// </summary>
         /// <returns> the size of the list</returns>
-        public int GetSize()
+        public int GetCount()
         {
             return count;
         }
